@@ -12,6 +12,7 @@
 body{margin:0}
 /* Layout: 冒頭は「動画 → 解析 → シート」の体験デモ。その下に実物シートの再現、仕組み、学び、拡張を短く */
 :root{
+  color-scheme:light;
   --bg:#F4F6F9; --surface:#FFFFFF; --ink:#16202E; --muted:#5B6678; --line:#DCE2EA;
   --grid:#E6EAF0; --head:#F0F3F7;
   --accent:#C2416B; --accent-soft:#F7E3EA;
@@ -21,14 +22,6 @@ body{margin:0}
   --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0F141C;--surface:#171E29;--ink:#E7ECF3;--muted:#9AA5B6;--line:#2A3444;--grid:#253041;--head:#1D2633;
-  --accent:#EC7A9C;--accent-soft:#3A2230;--good:#5CCB98;--good-soft:#173328;--warn:#E6B35C;--warn-soft:#3A2E17;--bad:#F08A7E;--bad-soft:#3C201D;--bar:#3A4659;--hl:#3A3418;
-  color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0F141C;--surface:#171E29;--ink:#E7ECF3;--muted:#9AA5B6;--line:#2A3444;--grid:#253041;--head:#1D2633;
-  --accent:#EC7A9C;--accent-soft:#3A2230;--good:#5CCB98;--good-soft:#173328;--warn:#E6B35C;--warn-soft:#3A2E17;--bad:#F08A7E;--bad-soft:#3C201D;--bar:#3A4659;--hl:#3A3418;
-  color-scheme:dark}
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
